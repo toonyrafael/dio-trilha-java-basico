@@ -13,7 +13,7 @@ public class ContaTerminal {
 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-        System.out.println("Olá, Td bem?, Vamos criar a sua conta do banco Peço que forneça as informações a seguir");
+        System.out.println("Olá, Td bem?, Vamos criar a sua conta do banco, Peço que forneça as informações a seguir");
         System.out.println("Digite o numero da sua Conta");
         int numero = scanner.nextInt();
         scanner.nextLine();
@@ -29,6 +29,7 @@ public class ContaTerminal {
 
         System.out.println("Olá " .concat(nomeCliente) + ", Obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo " + saldo + " Já está disponível para saque.");
 
+        scanner.close();
 
     }
 }
